@@ -10,6 +10,9 @@ author: Dargys Perez # add your name
 # Tracker
 # analytics: UA-127898106-1 # Google Analytics
 
+collections:
+  - projects
+
 # Build Settings
 markdown: kramdown
 plugins:

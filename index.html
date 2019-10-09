@@ -1,3 +1,5 @@
+---
+---
 <!doctype html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
@@ -41,8 +43,8 @@ https://templatemo.com/tm-503-newline
             <nav>
               <span class="cd-marker item-1"></span>
               <ul>
-                <li class="selected"><a href="#0"><div class="image-icon"><img src="assets/img/home-icon.png"></div><h6>About Me</h6></a></li>
-                <li><a href="#0"><div class="image-icon"><img src="assets/img/projects-icon.png"></div><h6>Projects</h6></a></li>
+                <li class="selected"><a href="selected"><div class="image-icon"><img src="assets/img/projects-icon.png"></div><h6>Projects</h6></a></li>
+                <li><a href="#0"><div class="image-icon"><img src="assets/img/home-icon.png"></div><h6>About Me</h6></a></li>
                 <li><a href="#0"><div class="image-icon"><img src="assets/img/contact-icon.png"></div><h6>Contact Me</h6></a></li>
               </ul>
             </nav> 
@@ -51,88 +53,34 @@ https://templatemo.com/tm-503-newline
           <ul class="cd-hero-slider">
 
             
+            
+            
+
             <li class="selected">
               <div class="heading">
                 <h1>Dargys Ilena Perez Barzaga</h1>
-              </div>
-              <div class="cd-half-width second-slide">   
-                <div class="container">
-                  <div class="row">
-                    <div class="col-md-12">
-                      <div class="content second-content">
-                        <div class="row">
-                          <div class="col-md-7 left-image">
-                            <img src="assets/img/left-about-image.jpg">
-                          </div>
-                          <div class="col-md-5">
-                            <div class="right-about-text">
-                              <h4>Who I am?</h4>
-                              <p>Fusce neque leo, dapibus sed imperdiet sed, vulputate sed purus. Nam eget justo in nibh facilisis rhoncus. Donec et risus non mauris lobortis convallis. Aliquam id urna quis ante blandit semper.</p>
-                              <div class="primary-button">
-                                <a href="#">Discover More</a>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-md-7">
-                            <div class="left-about-text">
-                              <h4>What I think?</h4>
-                              <p>Nam aliquam ultrices interdum. Vivamus metus mi, accumsan a tincidunt a, efficitur id felis. Vivamus non nibh malesuada, vestibulum nulla in, iaculis sem. Aenean tincidunt faucibus ipsum, ac aliquet nunc accumsan sed. Nulla sodales nunc sit amet libero egestas, ut interdum ex congue.</p>
-                              <div class="primary-button">
-                                <a href="#">Discover More</a>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-md-5 right-image">
-                            <img src="assets/img/right-about-image.jpg">
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>                  
-                </div>
-              </div>
-            </li>
-
-            
-
-            <li>
-              <div class="heading">
-                <h1>Projects where I participated</h1>
-                <span>Wide variety of projects</span> 
+                <span>Projects where I participated</span>
               </div>
               <div class="cd-half-width fourth-slide">
                 <div class="container">
                   <div class="row">
                     <div class="col-md-12">
                       <div class="content fourth-content">
+
+                          {% for project in site.projects %}
+
                         <div class="row">
-                          <div class="col-md-3 project-item">
-                            <a href="assets/img/item-01.jpg" data-lightbox="image-1"><img src="assets/img/project-item-01.jpg"></a>
-                          </div>
-                          <div class="col-md-3 project-item">
-                            <a href="assets/img/item-02.jpg" data-lightbox="image-1"><img src="assets/img/project-item-02.jpg"></a>
-                          </div>
-                          <div class="col-md-3 project-item">
-                            <a href="assets/img/item-03.jpg" data-lightbox="image-1"><img src="assets/img/project-item-03.jpg"></a>
-                          </div>
-                          <div class="col-md-3 project-item">
-                            <a href="assets/img/item-04.jpg" data-lightbox="image-1"><img src="assets/img/project-item-04.jpg"></a>
-                          </div>
-                          <div class="col-md-3 project-item">
-                            <a href="assets/img/item-05.jpg" data-lightbox="image-1"><img src="assets/img/project-item-05.jpg"></a>
-                          </div>
-                          <div class="col-md-3 project-item">
-                            <a href="assets/img/item-06.jpg" data-lightbox="image-1"><img src="assets/img/project-item-06.jpg"></a>
-                          </div>
-                          <div class="col-md-3 project-item">
-                            <a href="assets/img/item-07.jpg" data-lightbox="image-1"><img src="assets/img/project-item-07.jpg"></a>
-                          </div>
-                          <div class="col-md-3 project-item">
-                            <a href="assets/img/item-08.jpg" data-lightbox="image-1"><img src="assets/img/project-item-08.jpg"></a>
-                          </div>
+                            <div class="col-md-6 project-item">
+                              <a href="assets/img/{{project.img}}" data-lightbox="image-1"><img src="assets/img/{{project.img}}"></a>
+                            </div>
+                            <div class="col-md-6 project-item">
+
+                                <h4>{{project.title}}</h4>
+                                <p>{{project.description}}</p>
+                            </div>
+                          
                         </div>
+                          {% endfor %}
                       </div>
                     </div>
                   </div>                  
@@ -140,10 +88,66 @@ https://templatemo.com/tm-503-newline
               </div>
             </li>
 
+            <li >
+                <div class="heading">
+
+                  <h1>Dargys Ilena Perez Barzaga</h1>
+                  <span>About Me</span>
+                </div>
+                <div class="cd-half-width second-slide">   
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="content second-content">
+                          <div class="row">
+                            <div class="col-md-7 left-image">
+                              <img src="assets/img/havana.jpg">
+                            </div>
+                            <div class="col-md-5">
+                              <div class="right-about-text">
+                                <h4>Who I am?</h4>
+                                <p>Fusce neque leo, dapibus sed imperdiet sed, vulputate sed purus. Nam eget justo in nibh facilisis rhoncus. Donec et risus non mauris lobortis convallis. Aliquam id urna quis ante blandit semper.</p>
+                                
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-md-7">
+                              <div class="left-about-text">
+                                <h4>What I think?</h4>
+                                <p>Nam aliquam ultrices interdum. Vivamus metus mi, accumsan a tincidunt a, efficitur id felis. Vivamus non nibh malesuada, vestibulum nulla in, iaculis sem. Aenean tincidunt faucibus ipsum, ac aliquet nunc accumsan sed. Nulla sodales nunc sit amet libero egestas, ut interdum ex congue.</p>
+                                
+                              </div>
+                            </div>
+                            <div class="col-md-5 right-image">
+                              <img src="assets/img/isdi.jpg">
+                            </div>
+                          </div>
+                          <div class="row">
+                              <div class="col-md-7 left-image">
+                                <img src="assets/img/havana.jpg">
+                              </div>
+                              <div class="col-md-5">
+                                <div class="right-about-text">
+                                  <h4>What about my work experience</h4>
+                                  <p>Fusce neque leo, dapibus sed imperdiet sed, vulputate sed purus. Nam eget justo in nibh facilisis rhoncus. Donec et risus non mauris lobortis convallis. Aliquam id urna quis ante blandit semper.</p>
+                                 
+                                </div>
+                              </div>
+                            </div>
+
+                        </div>
+                        
+                      </div>
+                    </div>                  
+                  </div>
+                </div>
+              </li>
+  
             <li>
               <div class="heading">
-                <h1>Contact me</h1>
-                <span>I will respond you in a "plis-plas"</span> 
+                <h1>Dargys Ilena Perez Barzaga</h1>
+                <span>Contact Me, I will respond you in a "plis-plas"</span> 
               </div>
               <div class="cd-half-width fivth-slide">
                 <div class="container">
