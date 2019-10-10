@@ -78,8 +78,18 @@ https://templatemo.com/tm-503-newline
                                 <h4>{{project.title}}</h4>
                                 <p>{{project.description}}</p>
                             </div>
-                          
+
                         </div>
+                        <div class="row">
+                          {% for img in project.imgs %}
+                            <div class="col-md-3 project-item">
+                                <a href="assets/img/{{img}}" data-lightbox="image-1"><img src="assets/img/{{img}}"></a>
+                              </div>
+
+                          {% endfor %}
+                        </div>
+
+                        <hr/>
                           {% endfor %}
                       </div>
                     </div>
@@ -105,7 +115,7 @@ https://templatemo.com/tm-503-newline
                             </div>
                             <div class="col-md-5">
                               <div class="right-about-text">
-                                <h4>Who I am?</h4>
+                                <h4>Who am I?</h4>
                                 <p>My name is Dargys Ilena Perez Barzaga, born in 1994. I was living in Cuba for 24 years, but now, I am in one of the most beautiful cities in the world, Stockholm. The University of Havana was my former university, where I achieve a specialist degree in Industrial Design. I had five years of intense and enjoyable experiences in the academy arena when I was a student. However, I believe in continuous learning, and I am always happy to learn something new, even outside of the Design world. I love the team-work and of course ... the coffee machine :)</p>
                                 
                               </div>
