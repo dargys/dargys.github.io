@@ -11,7 +11,7 @@
 
 The primary motivation was the design of a respiratory support device for patients with Amyotrophic Lateral Sclerosis (ELA in Spanish). It was commissioned by the Institute of Neurology and Neurosurgery in Cuba, as a proposal to help these patients. 
 
-We analyzed the main characteristics and behaviors in these patients. Also, we did an exhaustive study on state-of-the-art treatments in Cuba. We realized the significant social problem that this represents; for example, there is no support for this kind of equipment developing in Cuba. Therefore, the respiratory issues are leading the cause of death for the affected people.
+We analyzed the main characteristics and behaviors in these patients. Also, we did an exhaustive study on state-of-the-art treatments in Cuba. We realized the significant social problem that this represents; for example, there is no support for producing this kind of equipment in Cuba, specifically with foreign solutions. Therefore, the respiratory issues are leading the cause of death for the affected people.
 
 In concrete, the final solution provided a ventilatory mechanism that works basic mechanical principles. It removes unnecessary usage of energy, focusing only on the flow from the oxygen source. As a result, the patient would be capable of breath more easily.
 

@@ -16,3 +16,5 @@ This was my first incursion in sustainable development. The main idea was to cre
 
 
 It was shown in a Fashion Show in [FAC](http://www.fac.cu/), this place was recently tagged as a world cultural destination site. 
+
+ 

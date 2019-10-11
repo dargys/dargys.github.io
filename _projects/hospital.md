@@ -9,7 +9,7 @@
      - hospital/2.png
 ---
 
-Some Hospital in Havana that was being renovated needed new design solutions to adapt some specific technology.
+Some Hospital in Havana, that was being renovated, needed new design solutions to adapt some specific technology.
 
 With little time to do it, he had to reach the development stage.
 The furniture had to comply with regulations and a specific local supplier. Our goal was to make the best use of space and improve lighting conditions.
