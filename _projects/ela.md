@@ -5,9 +5,8 @@
 
     img: ela/1.jpg # Add image post (optional)
     imgs:
-     - ela/2.jpg
-     - ela/4.jpg
      - ela/5.jpg
+     - ela/4.jpg
 ---
 
 The primary motivation was the design of a respiratory support device for patients with Amyotrophic Lateral Sclerosis (ELA in Spanish). It was commissioned by the Institute of Neurology and Neurosurgery in Cuba, as a proposal to help these patients. 
